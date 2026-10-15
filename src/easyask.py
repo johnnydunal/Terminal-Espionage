@@ -3,7 +3,7 @@ EasyAsk module for Terminal Espionage.
 Made to facilitate asking user questions and receiving user feedback.
 '''
 
-import src.fancytype as fancytype
+import fancytype
 
 def yes_or_no(question):
     while True:

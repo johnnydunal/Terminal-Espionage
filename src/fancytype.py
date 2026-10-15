@@ -14,6 +14,10 @@ def slow_type(text, delay_during=0.04, delay_after=0.5, newline=True):
         print()
     time.sleep(delay_after)
 
+# Gives Flint a distinct visual tag in the scrolling terminal
+def print_slow_color(text, color_code, delay_during=0.04, delay_after=0.5, newline=True):
+    slow_type(f"\033[{color_code}m{text}\033[0m", delay_during, delay_after, newline) # NOTE: NOT SURE IF THIS WORKS ACCURATELY (QUICK TEST NEEDED)
+
 # Types the given text slowly, character by character, and waits for user input after
 def slow_type_and_wait(text, delay_during=0.04, delay_after=0.5):
     for char in text:

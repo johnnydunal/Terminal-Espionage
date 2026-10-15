@@ -3,7 +3,7 @@ This module serves as the Operations Center, where users choose their mission an
 to their objective.
 '''
 
-import src.fancytype as fancytype
+import fancytype
 
 def launch(player_name):
-    pass
+    pass # TODO: Create the actual mission selection process!
